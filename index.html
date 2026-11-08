@@ -1,0 +1,1850 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>海角吃瓜-热门爆料_每日速递_内容风向</title>
+  <meta name="description" content="海角吃瓜提供热门爆料、每日速递与内容风向，汇集吃瓜前线的讨论与观察，适合关注网络热点的用户浏览与追踪。">
+  <meta name="keywords" content="热门爆料,吃瓜前线,每日速递,内容风向,网络热点">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231b4d3e'/%3E%3Cpath d='M16 24h32v6H16zm0 12h24v6H16z' fill='%23f7e9c3'/%3E%3Ccircle cx='48' cy='42' r='6' fill='%23e8a75b'/%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #f8f5ef;
+      --surface: #ffffff;
+      --surface-2: #fdfaf4;
+      --ink: #1f2a24;
+      --ink-soft: #3e4d45;
+      --muted: #6d7a72;
+      --line: #e3ddd2;
+      --brand: #1b4d3e;
+      --brand-soft: #e9f0ec;
+      --accent: #b85c38;
+      --accent-soft: #f9ede7;
+      --gold: #c9a24b;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --shadow-sm: 0 2px 8px rgba(27, 77, 62, 0.06);
+      --shadow-md: 0 10px 30px rgba(27, 77, 62, 0.08);
+      --header-h: 64px;
+      --announce-h: 38px;
+      --offset: calc(var(--announce-h) + var(--header-h));
+      --font-sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, -apple-system, sans-serif;
+      --font-serif: "Songti SC", "Noto Serif SC", "SimSun", Georgia, serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--offset);
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    button {
+      font: inherit;
+      cursor: pointer;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    .wrap {
+      width: min(1380px, 100% - 40px);
+      margin-inline: auto;
+    }
+
+    /* ---------- 吸顶公告条 ---------- */
+    .announcebar {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      height: var(--announce-h);
+      background: var(--brand);
+      color: #f3efe6;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.02em;
+    }
+
+    .announcebar .wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .announcebar b {
+      color: #f2d89c;
+      font-weight: 600;
+    }
+
+    .announcebar .dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #f2d89c;
+      flex: none;
+    }
+
+    .announcebar .more {
+      margin-left: auto;
+      color: #f2d89c;
+      font-size: 12px;
+      flex: none;
+    }
+
+    /* ---------- 吸顶页头 ---------- */
+    .sitehead {
+      position: sticky;
+      top: var(--announce-h);
+      z-index: 55;
+      height: var(--header-h);
+      background: rgba(248, 245, 239, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .sitehead .wrap {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: none;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      flex: none;
+    }
+
+    .brand-name {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: var(--brand);
+      white-space: nowrap;
+    }
+
+    .headnav {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      margin-left: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .headnav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .headnav a {
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: 14px;
+      color: var(--ink-soft);
+      white-space: nowrap;
+    }
+
+    .headnav a:hover {
+      background: var(--brand-soft);
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    .head-search {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 6px 4px 14px;
+      flex: 0 1 260px;
+      min-width: 160px;
+    }
+
+    .head-search input {
+      border: 0;
+      background: transparent;
+      font: inherit;
+      font-size: 13px;
+      width: 100%;
+      min-width: 0;
+      color: var(--ink);
+      outline: none;
+    }
+
+    .head-search button {
+      border: 0;
+      background: var(--brand);
+      color: #fff;
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    /* ---------- 首屏 ---------- */
+    .hero {
+      background:
+        radial-gradient(900px 340px at 82% -20%, rgba(201, 162, 75, 0.22), transparent 70%),
+        linear-gradient(135deg, #1b4d3e 0%, #143a2f 55%, #0f2d24 100%);
+      color: #f4f0e6;
+      padding: 42px 0 38px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -90px;
+      bottom: -120px;
+      width: 340px;
+      height: 340px;
+      border: 1px solid rgba(242, 216, 156, 0.18);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: 40px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #f2d89c;
+      border: 1px solid rgba(242, 216, 156, 0.35);
+      border-radius: 999px;
+      padding: 4px 14px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.08;
+      letter-spacing: 0.04em;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .hero p.lead {
+      font-size: 15px;
+      line-height: 1.85;
+      color: rgba(244, 240, 230, 0.86);
+      max-width: 44em;
+      margin-bottom: 24px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 999px;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid transparent;
+      transition: 0.2s;
+    }
+
+    .btn-primary {
+      background: #f2d89c;
+      color: #1b2b23;
+    }
+
+    .btn-primary:hover {
+      background: #ffe9b8;
+      text-decoration: none;
+    }
+
+    .btn-ghost {
+      border-color: rgba(242, 216, 156, 0.5);
+      color: #f4f0e6;
+    }
+
+    .btn-ghost:hover {
+      background: rgba(242, 216, 156, 0.12);
+      text-decoration: none;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      font-size: 12px;
+      color: rgba(244, 240, 230, 0.65);
+    }
+
+    .hero-meta span::before {
+      content: "·";
+      margin-right: 8px;
+      color: #f2d89c;
+    }
+
+    .hero-meta span:first-child::before {
+      content: none;
+      margin: 0;
+    }
+
+    .hero-visual {
+      display: grid;
+      gap: 12px;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(242, 216, 156, 0.16);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      backdrop-filter: blur(6px);
+    }
+
+    .hero-card-top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      color: #f2d89c;
+      margin-bottom: 8px;
+    }
+
+    .hero-card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #f7f2e7;
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    .hero-card p {
+      font-size: 12.5px;
+      color: rgba(244, 240, 230, 0.62);
+      line-height: 1.6;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .hero-tags span {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(242, 216, 156, 0.3);
+      color: #f2d89c;
+    }
+
+    /* ---------- 三栏主布局 ---------- */
+    .layout {
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr) 240px;
+      gap: 26px;
+      align-items: start;
+      padding: 30px 0 40px;
+    }
+
+    /* 左栏 */
+    .sidebar-left {
+      position: sticky;
+      top: calc(var(--offset) + 14px);
+      display: grid;
+      gap: 16px;
+      font-size: 13px;
+    }
+
+    .side-block {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .side-block h4 {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .side-block ul {
+      list-style: none;
+      display: grid;
+      gap: 2px;
+    }
+
+    .side-block li a {
+      display: flex;
+      justify-content: space-between;
+      gap: 6px;
+      padding: 6px 8px;
+      border-radius: 8px;
+      color: var(--ink-soft);
+      font-size: 13px;
+    }
+
+    .side-block li a:hover {
+      background: var(--brand-soft);
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    .side-block li a em {
+      font-style: normal;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag-cloud a {
+      font-size: 11.5px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: var(--surface-2);
+      border: 1px solid var(--line);
+      color: var(--ink-soft);
+    }
+
+    .tag-cloud a:hover {
+      border-color: var(--brand);
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    /* 中栏 */
+    .maincol {
+      min-width: 0;
+      display: grid;
+      gap: 26px;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 24px 26px;
+      box-shadow: var(--shadow-sm);
+      scroll-margin-top: var(--offset);
+    }
+
+    .panel h2 {
+      font-size: 21px;
+      letter-spacing: 0.02em;
+      color: var(--brand);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .panel .sub {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    .panel h3 {
+      font-size: 16px;
+      color: var(--ink);
+      margin: 18px 0 8px;
+      font-weight: 700;
+    }
+
+    .panel p {
+      font-size: 14.5px;
+      color: var(--ink-soft);
+      margin-bottom: 10px;
+      line-height: 1.85;
+    }
+
+    .panel ul,
+    .panel ol {
+      padding-left: 20px;
+      margin: 8px 0 12px;
+      color: var(--ink-soft);
+      font-size: 14.5px;
+    }
+
+    .panel li {
+      margin-bottom: 5px;
+    }
+
+    .intro-text p {
+      max-width: 72ch;
+    }
+
+    /* 卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .content-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      background: var(--surface-2);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: 0.2s;
+    }
+
+    .content-card:hover {
+      border-color: #bfd3c7;
+      box-shadow: var(--shadow-sm);
+      transform: translateY(-1px);
+    }
+
+    .card-type {
+      align-self: flex-start;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border-radius: 4px;
+      padding: 1px 7px;
+      font-weight: 600;
+    }
+
+    .content-card h3 {
+      font-size: 14.5px;
+      margin: 0;
+      line-height: 1.45;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .content-card p {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin: 0;
+      flex: 1;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .card-tags span {
+      font-size: 10.5px;
+      padding: 1px 6px;
+      border-radius: 3px;
+      background: #eef3ef;
+      color: #3d5a4b;
+    }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--muted);
+      border-top: 1px dashed var(--line);
+      padding-top: 8px;
+      margin-top: 2px;
+    }
+
+    /* 紧凑列表 */
+    .compact-list {
+      display: grid;
+      gap: 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .compact-list li {
+      list-style: none;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 12px;
+      align-items: baseline;
+      padding: 10px 4px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+
+    .compact-list li .idx {
+      font-family: var(--font-serif);
+      font-size: 13px;
+      color: var(--gold);
+      font-weight: 700;
+      width: 24px;
+    }
+
+    .compact-list li .title {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .compact-list li .title a {
+      color: inherit;
+    }
+
+    .compact-list li .brief {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 400;
+      margin-top: 2px;
+    }
+
+    .compact-list li .time {
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    /* 分类入口 */
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .cat-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      background: var(--surface-2);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .cat-item b {
+      font-size: 14px;
+      color: var(--brand);
+    }
+
+    .cat-item span {
+      font-size: 11.5px;
+      color: var(--muted);
+    }
+
+    /* 深度解析 */
+    .deep .divider {
+      height: 1px;
+      background: var(--line);
+      margin: 16px 0;
+    }
+
+    .compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 14px 0;
+    }
+
+    .compare-box {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      background: var(--surface-2);
+    }
+
+    .compare-box h4 {
+      font-size: 13px;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .compare-box p {
+      font-size: 13px;
+      margin: 0;
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 0 14px;
+      background: var(--surface-2);
+    }
+
+    details[open] {
+      border-color: #c4d6ca;
+      background: #fbfdfa;
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 12px 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink);
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      color: var(--brand);
+      font-size: 18px;
+      line-height: 1;
+      flex: none;
+    }
+
+    details[open] summary::after {
+      content: "–";
+    }
+
+    details p {
+      font-size: 13.5px;
+      padding: 0 0 12px;
+      color: var(--ink-soft);
+      margin: 0;
+    }
+
+    /* 评论 */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .comment {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 10px 12px;
+      background: var(--surface-2);
+    }
+
+    .comment-top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .avatar {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--brand-soft);
+      color: var(--brand);
+      font-size: 11px;
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+      flex: none;
+    }
+
+    .comment-top b {
+      font-size: 12px;
+      color: var(--ink);
+    }
+
+    .comment-top span {
+      font-size: 10px;
+      color: var(--muted);
+      margin-left: auto;
+    }
+
+    .comment p {
+      font-size: 12.5px;
+      margin: 0;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+
+    /* 资讯 */
+    .news-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .news-item {
+      display: grid;
+      grid-template-columns: 78px 1fr;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .news-item:last-child {
+      border-bottom: 0;
+    }
+
+    .news-date {
+      font-size: 11px;
+      color: var(--muted);
+      font-family: var(--font-serif);
+      letter-spacing: 0.04em;
+    }
+
+    .news-item h4 {
+      font-size: 14px;
+      margin-bottom: 2px;
+      color: var(--ink);
+    }
+
+    .news-item p {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* 相关推荐 */
+    .rec-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .rec-tags a {
+      font-size: 12.5px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      color: var(--ink-soft);
+    }
+
+    .rec-tags a:hover {
+      border-color: var(--brand);
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    /* 时间线 */
+    .timeline {
+      display: grid;
+      gap: 0;
+      margin-top: 10px;
+    }
+
+    .tl-item {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: 14px;
+      padding: 10px 0;
+      border-left: 2px solid var(--brand-soft);
+      padding-left: 16px;
+      position: relative;
+    }
+
+    .tl-item::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: 18px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brand);
+      border: 2px solid var(--surface);
+    }
+
+    .tl-time {
+      font-size: 11.5px;
+      color: var(--muted);
+      font-family: var(--font-serif);
+    }
+
+    .tl-item b {
+      font-size: 14px;
+      color: var(--ink);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .tl-item p {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* 右栏 */
+    .sidebar-right {
+      position: sticky;
+      top: calc(var(--offset) + 14px);
+      display: grid;
+      gap: 16px;
+      font-size: 13px;
+    }
+
+    .toc ul {
+      list-style: none;
+      display: grid;
+      gap: 1px;
+    }
+
+    .toc a {
+      display: block;
+      padding: 5px 8px;
+      border-radius: 6px;
+      font-size: 12.5px;
+      color: var(--ink-soft);
+      border-left: 2px solid transparent;
+    }
+
+    .toc a:hover {
+      background: var(--brand-soft);
+      border-left-color: var(--brand);
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    .hot-list {
+      list-style: none;
+      display: grid;
+      gap: 6px;
+    }
+
+    .hot-list li {
+      display: flex;
+      gap: 8px;
+      align-items: baseline;
+      font-size: 13px;
+    }
+
+    .hot-list .rank {
+      font-family: var(--font-serif);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--gold);
+      width: 18px;
+      flex: none;
+    }
+
+    .hot-list a {
+      color: var(--ink-soft);
+    }
+
+    .hot-list a:hover {
+      color: var(--brand);
+    }
+
+    .ext-link {
+      display: flex;
+      justify-content: space-between;
+      padding: 7px 0;
+      border-bottom: 1px dashed var(--line);
+      font-size: 13px;
+      color: var(--ink-soft);
+    }
+
+    .ext-link:last-child {
+      border-bottom: 0;
+    }
+
+    .ext-link span {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* 页尾 */
+    footer {
+      background: #132a22;
+      color: rgba(244, 240, 230, 0.74);
+      padding: 40px 0 26px;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr 1fr;
+      gap: 26px;
+      margin-bottom: 28px;
+    }
+
+    .footer-brand b {
+      font-size: 18px;
+      color: #f2d89c;
+      letter-spacing: 0.08em;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .footer-brand p {
+      font-size: 12.5px;
+      line-height: 1.7;
+      max-width: 30em;
+      color: rgba(244, 240, 230, 0.6);
+    }
+
+    .footer-col h4 {
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      color: #f2d89c;
+      margin-bottom: 10px;
+    }
+
+    .footer-col a {
+      display: block;
+      color: rgba(244, 240, 230, 0.7);
+      padding: 3px 0;
+      font-size: 12.5px;
+    }
+
+    .footer-col a:hover {
+      color: #f2d89c;
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(242, 216, 156, 0.16);
+      padding-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 11.5px;
+      color: rgba(244, 240, 230, 0.45);
+    }
+
+    .empty-msg {
+      display: none;
+      padding: 14px;
+      font-size: 13px;
+      color: var(--muted);
+      border: 1px dashed var(--line);
+      border-radius: var(--radius-md);
+      text-align: center;
+    }
+
+    /* ---------- 响应式 ---------- */
+    @media (max-width: 1120px) {
+      .layout {
+        grid-template-columns: 1fr 240px;
+      }
+
+      .sidebar-left {
+        position: static;
+        grid-column: 1 / -1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .sidebar-left .side-block {
+        flex: 1 1 180px;
+      }
+
+      .maincol {
+        grid-column: 1;
+      }
+
+      .sidebar-right {
+        grid-column: 2;
+        position: static;
+      }
+
+      .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .cat-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 860px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar-left,
+      .sidebar-right {
+        grid-column: 1;
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .headnav {
+        display: none;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+      }
+
+      .hero-visual {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .comment-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .wrap {
+        width: calc(100% - 24px);
+      }
+
+      .announcebar {
+        font-size: 11.5px;
+      }
+
+      .announcebar .more {
+        display: none;
+      }
+
+      .sitehead {
+        height: 56px;
+      }
+
+      :root {
+        --header-h: 56px;
+      }
+
+      .brand-name {
+        font-size: 17px;
+      }
+
+      .head-search {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .hero {
+        padding: 28px 0 26px;
+      }
+
+      .hero-visual {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card:nth-child(3) {
+        display: none;
+      }
+
+      .panel {
+        padding: 18px 16px;
+        border-radius: var(--radius-md);
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cat-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .compare {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar-left,
+      .sidebar-right {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .compact-list li {
+        grid-template-columns: auto 1fr;
+      }
+
+      .compact-list li .time {
+        display: none;
+      }
+
+      .news-item {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 吸顶公告条 -->
+  <div class="announcebar">
+    <div class="wrap">
+      <span class="dot" aria-hidden="true"></span>
+      <span><b>今日上新</b> 热门爆料合集 12 条 · 每日速递已更新</span>
+      <a class="more" href="#latest">查看速递 →</a>
+    </div>
+  </div>
+
+  <!-- 吸顶页头 -->
+  <header class="sitehead">
+    <div class="wrap">
+      <a class="brand" href="/#top" aria-label="海角吃瓜 首页">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="#1b4d3e"/>
+          <path d="M16 24h32v6H16zm0 12h24v6H16z" fill="#f7e9c3"/>
+          <circle cx="48" cy="42" r="6" fill="#e8a75b"/>
+        </svg>
+        <span class="brand-name">海角吃瓜</span>
+      </a>
+      <nav class="headnav" aria-label="频道导航">
+        <a href="#hot">热门爆料</a>
+        <a href="#latest">每日速递</a>
+        <a href="#category">分类入口</a>
+        <a href="#deep">深度解析</a>
+        <a href="#faq">常见问答</a>
+        <a href="#comments">用户评论</a>
+      </nav>
+      <form class="head-search" role="search" onsubmit="return false;" aria-label="站内搜索">
+        <input id="searchInput" type="search" placeholder="搜索爆料 / 话题 / 类型" aria-label="搜索内容">
+        <button id="searchBtn" type="button">搜索</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- 首屏 -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-kicker">热点观察 · 内容风向</span>
+        <h1>海角吃瓜</h1>
+        <p class="lead">
+          聚焦网络热点与讨论现场的资讯门户。每日速递热门爆料、整理吃瓜前线的观察角度与内容风向，
+          帮助关注热点的读者快速了解话题脉络、类型差异和讨论进展，在信息密集的吃瓜场景里找到值得读的条目。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#hot">浏览热门爆料</a>
+          <a class="btn btn-ghost" href="#latest">查看每日速递</a>
+        </div>
+        <div class="hero-meta">
+          <span>每日更新 8—12 条</span>
+          <span>覆盖讨论现场与内容风向</span>
+          <span>适合通勤浏览与睡前速览</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card">
+          <div class="hero-card-top"><span>今日热议</span><span>12 条</span></div>
+          <h3>话题现场与讨论脉络，一次看清来龙去脉</h3>
+          <p>从爆料源头到讨论延伸，按时间线整理关键信息点，减少来回翻找。</p>
+          <div class="hero-tags"><span>话题现场</span><span>时间线</span><span>讨论延伸</span></div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-top"><span>内容风向</span><span>观察</span></div>
+          <h3>哪些类型的话题更容易被持续讨论</h3>
+          <p>结合近期内容变化，梳理讨论热点与类型偏好，方便判断跟进方向。</p>
+          <div class="hero-tags"><span>内容风向</span><span>讨论热点</span><span>类型偏好</span></div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-top"><span>速递提醒</span><span>每日</span></div>
+          <h3>通勤路上也能快速浏览的重点摘要</h3>
+          <p>每条摘要控制在两三句，适合碎片时间阅读，不必逐篇展开。</p>
+          <div class="hero-tags"><span>通勤浏览</span><span>睡前速览</span><span>重点摘要</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 三栏主内容 -->
+  <div class="wrap layout">
+
+    <!-- 左栏：频道与标签索引 -->
+    <aside class="sidebar-left" aria-label="频道导航与标签索引">
+      <div class="side-block">
+        <h4>频道</h4>
+        <ul>
+          <li><a href="#intro">内容简介 <em>01</em></a></li>
+          <li><a href="#hot">热门爆料 <em>02</em></a></li>
+          <li><a href="#latest">每日速递 <em>03</em></a></li>
+          <li><a href="#category">分类入口 <em>04</em></a></li>
+          <li><a href="#deep">深度解析 <em>05</em></a></li>
+          <li><a href="#guide">体验指南 <em>06</em></a></li>
+          <li><a href="#faq">常见问答 <em>07</em></a></li>
+          <li><a href="#comments">用户评论 <em>08</em></a></li>
+          <li><a href="#news">相关资讯 <em>09</em></a></li>
+          <li><a href="#recommend">相关推荐 <em>10</em></a></li>
+          <li><a href="#timeline">内容时间线 <em>11</em></a></li>
+        </ul>
+      </div>
+      <div class="side-block">
+        <h4>热门标签</h4>
+        <div class="tag-cloud">
+          <a href="#hot">话题现场</a>
+          <a href="#category">讨论脉络</a>
+          <a href="#latest">每日速递</a>
+          <a href="#deep">内容风向</a>
+          <a href="#faq">更新节奏</a>
+          <a href="#recommend">类型对比</a>
+          <a href="#hot">吃瓜前线</a>
+          <a href="#latest">通勤速览</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 中栏：主内容 -->
+    <main class="maincol" id="main">
+
+      <!-- 01 内容简介 -->
+      <section class="panel" id="intro">
+        <h2>内容简介</h2>
+        <p class="sub">海角吃瓜是什么、提供哪些内容、适合哪些读者。</p>
+        <div class="intro-text">
+          <p>
+            海角吃瓜是一个围绕网络热点与讨论现场展开的资讯型页面，主要整理热门爆料、每日速递和内容风向三类信息。
+            页面以“快速了解话题脉络”为核心，把分散的讨论线索按类型、时间和关注度重新组织，方便读者在通勤、午休或睡前用较短时间浏览。
+          </p>
+          <p>
+            在内容组织上，页面把“热门爆料”与“每日速递”分开：前者侧重话题的现场感和讨论热度，适合想快速知道大家在聊什么的读者；
+            后者按日期滚动整理条目摘要，适合持续跟进同一类话题的更新。分类入口则从类型角度划分讨论方向，
+            比如话题现场、讨论脉络、内容风向和类型对比，让读者不必从头翻到尾。
+          </p>
+          <p>
+            对于第一次接触这类内容的读者，建议先看每日速递了解近期高频出现的话题名称，再去热门爆料里挑两三条感兴趣的条目深入阅读。
+            如果更关心某一类话题的持续走向，可以结合深度解析和内容时间线，观察讨论是如何从单条爆料扩展为多轮讨论的。
+            页面内所有示例数据仅用于展示内容结构，实际阅读时请以具体条目摘要为准。
+          </p>
+        </div>
+      </section>
+
+      <!-- 02 热门内容推荐 -->
+      <section class="panel" id="hot">
+        <h2>热门爆料推荐</h2>
+        <p class="sub">近期讨论度较高的内容条目，按话题类型与看点整理。</p>
+        <div class="card-grid" id="hotCards">
+          <article class="content-card">
+            <span class="card-type">话题现场</span>
+            <h3>讨论热度持续攀升的现场话题整理</h3>
+            <p>围绕一条讨论线索展开，按时间顺序梳理关键节点，适合想快速了解来龙去脉的读者。</p>
+            <div class="card-tags"><span>话题现场</span><span>时间线</span><span>讨论延伸</span></div>
+            <div class="card-meta"><span>热度 9.2</span><span>更新于今日</span></div>
+          </article>
+          <article class="content-card">
+            <span class="card-type">内容风向</span>
+            <h3>近期内容风向变化与类型偏好观察</h3>
+            <p>从讨论密度和话题类型两个角度，整理近期更容易被持续跟进的内容方向。</p>
+            <div class="card-tags"><span>内容风向</span><span>类型偏好</span><span>讨论密度</span></div>
+            <div class="card-meta"><span>热度 8.7</span><span>2 小时前</span></div>
+          </article>
+          <article class="content-card">
+            <span class="card-type">每日速递</span>
+            <h3>通勤速览：今日值得快速浏览的条目</h3>
+            <p>把当日速递里信息量较足的条目挑出来，每条一句话摘要，适合碎片时间阅读。</p>
+            <div class="card-tags"><span>通勤速览</span><span>每日速递</span><span>一句话摘要</span></div>
+            <div class="card-meta"><span>热度 8.5</span><span>今日 08:20</span></div>
+          </article>
+          <article class="content-card">
+            <span class="card-type">类型对比</span>
+            <h3>两类讨论话题的差异与阅读选择</h3>
+            <p>偏现场感的话题和偏观察类的内容有什么区别，适合什么阅读场景，用对照方式说明。</p>
+            <div class="card-tags"><span>类型对比</span><span>阅读场景</span><span>话题差异</span></div>
+            <div class="card-meta"><span>热度 8.1</span><span>昨日更新</span></div>
+          </article>
+          <article class="content-card">
+            <span class="card-type">讨论脉络</span>
+            <h3>从单条爆料到多轮讨论的脉络梳理</h3>
+            <p>讨论如何扩散、哪些节点被反复提及，适合想理解话题走向而非只看结论的读者。</p>
+            <div class="card-tags"><span>讨论脉络</span><span>话题走向</span><span>关键节点</span></div>
+            <div class="card-meta"><span>热度 7.9</span><span>今日 10:05</span></div>
+          </article>
+          <article class="content-card">
+            <span class="card-type">更新节奏</span>
+            <h3>每日速递的更新规律与追更建议</h3>
+            <p>说明速递类内容的更新频次和适合的追更方式，帮助读者安排浏览节奏。</p>
+            <div class="card-tags"><span>更新节奏</span><span>追更建议</span><span>速递频次</span></div>
+            <div class="card-meta"><span>热度 7.6</span><span>昨日更新</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 03 最新更新 -->
+      <section class="panel" id="latest">
+        <h2>每日速递 · 最新更新</h2>
+        <p class="sub">按更新时间排列的条目摘要，适合持续跟进。</p>
+        <ul class="compact-list">
+          <li>
+            <span class="idx">01</span>
+            <span class="title"><a href="#latest">话题现场速递：讨论集中度上升</a><span class="brief">多条讨论指向同一类内容方向，摘要已整理。</span></span>
+            <span class="time">今日 11:20</span>
+          </li>
+          <li>
+            <span class="idx">02</span>
+            <span class="title"><a href="#latest">内容风向观察：偏观察类内容增多</a><span class="brief">与昨日相比，观察类条目的阅读完成度更高。</span></span>
+            <span class="time">今日 10:40</span>
+          </li>
+          <li>
+            <span class="idx">03</span>
+            <span class="title"><a href="#latest">讨论脉络更新：三个关键节点被反复提及</a><span class="brief">时间线补充了讨论扩散的中间环节。</span></span>
+            <span class="time">今日 09:55</span>
+          </li>
+          <li>
+            <span class="idx">04</span>
+            <span class="title"><a href="#latest">类型对比速递：现场感与观察类差异</a><span class="brief">用对照方式说明两类内容的阅读场景。</span></span>
+            <span class="time">今日 09:10</span>
+          </li>
+          <li>
+            <span class="idx">05</span>
+            <span class="title"><a href="#latest">通勤速览条目：三条一句话摘要</a><span class="brief">适合在地铁或公交上快速浏览。</span></span>
+            <span class="time">今日 08:30</span>
+          </li>
+          <li>
+            <span class="idx">06</span>
+            <span class="title"><a href="#latest">睡前速览：今日讨论热度回落条目</a><span class="brief">部分话题进入平稳期，摘要保留关键信息。</span></span>
+            <span class="time">昨日 22:15</span>
+          </li>
+          <li>
+            <span class="idx">07</span>
+            <span class="title"><a href="#latest">讨论延伸：从单条爆料到多角度解读</a><span class="brief">补充了不同视角的讨论摘要。</span></span>
+            <span class="time">昨日 20:40</span>
+          </li>
+          <li>
+            <span class="idx">08</span>
+            <span class="title"><a href="#latest">内容风向：近期高频类型名称整理</a><span class="brief">按出现频次列出近期讨论中常见的类型词。</span></span>
+            <span class="time">昨日 18:05</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 04 分类入口 -->
+      <section class="panel" id="category">
+        <h2>分类入口</h2>
+        <p class="sub">按内容方向与阅读场景划分，点击进入对应栏目。</p>
+        <div class="cat-grid">
+          <a class="cat-item" href="#hot"><b>话题现场</b><span>讨论集中、更新较快的条目</span></a>
+          <a class="cat-item" href="#deep"><b>内容风向</b><span>观察类内容与类型偏好</span></a>
+          <a class="cat-item" href="#latest"><b>每日速递</b><span>按日期滚动的摘要条目</span></a>
+          <a class="cat-item" href="#timeline"><b>讨论脉络</b><span>时间线与关键节点整理</span></a>
+          <a class="cat-item" href="#recommend"><b>类型对比</b><span>不同内容方向的差异说明</span></a>
+          <a class="cat-item" href="#faq"><b>更新节奏</b><span>速递频次与追更建议</span></a>
+          <a class="cat-item" href="#hot"><b>吃瓜前线</b><span>热度较高的讨论条目</span></a>
+          <a class="cat-item" href="#latest"><b>通勤速览</b><span>适合碎片时间的一句话摘要</span></a>
+        </div>
+      </section>
+
+      <!-- 05 深度解析 -->
+      <section class="panel deep" id="deep">
+        <h2>深度解析：吃瓜类内容如何读得更清楚</h2>
+        <p class="sub">从话题现场、讨论脉络到类型对比，梳理阅读这类内容时的判断方式。</p>
+
+        <p>
+          吃瓜类内容往往以“快”取胜，但真正影响阅读体验的，是能否在短时间内分清话题的主干和枝节。
+          海角吃瓜在整理条目时，会把“现场感”和“观察类”内容分开处理：现场感强的条目适合快速浏览，
+          观察类条目则更适合留出几分钟慢慢读。两类内容并不是互斥关系，而是分别对应不同的阅读场景。
+        </p>
+
+        <h3>先看类型，再决定投入多少时间</h3>
+        <p>
+          面对一组更新，先判断它属于哪一类，再决定是否深入。常见可以分成三类：以事件节点为主的时间线整理、
+          以讨论扩散为主的脉络梳理，以及以类型差异为主的对照说明。前两类适合想快速了解“发生了什么”的读者，
+          第三类更适合正在比较不同内容方向、需要选择依据的读者。
+        </p>
+        <ul>
+          <li><strong>时间线整理：</strong>按时间顺序列出关键节点，适合快速了解来龙去脉。</li>
+          <li><strong>脉络梳理：</strong>关注讨论如何扩散，适合想理解话题走向的读者。</li>
+          <li><strong>类型对照：</strong>用并排比较的方式说明差异，适合正在做选择的读者。</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <h3>对照阅读：现场感与观察类的差别</h3>
+        <p>
+          同样是热门话题，现场感强的条目往往更新更快、情绪表达更直接；观察类内容则更注重归纳和比较，
+          更新节奏相对慢一些，但更适合沉淀判断。两种内容放在一起看，能减少只依赖单条信息带来的偏差。
+        </p>
+        <div class="compare">
+          <div class="compare-box">
+            <h4>现场感条目</h4>
+            <p>更新频次高、信息点密集，适合通勤或午休时快速浏览，重点看关键节点与讨论集中度。</p>
+          </div>
+          <div class="compare-box">
+            <h4>观察类内容</h4>
+            <p>更新节奏较稳，侧重类型差异与讨论走向，适合睡前留出时间慢慢读，重点看归纳与对照。</p>
+          </div>
+        </div>
+
+        <h3>如何判断一条内容是否值得跟进</h3>
+        <p>
+          可以从三个维度快速判断：信息是否具体、讨论是否有新的节点、类型是否与自己的关注方向一致。
+          如果一条内容只停留在情绪表达而没有新的信息点，可以暂时跳过；如果它补充了时间线上的缺失环节，
+          或者给出了不同角度的对照，就值得花时间阅读。海角吃瓜在摘要中尽量保留具体信息点，减少空泛描述。
+        </p>
+        <p>
+          对于想持续跟进同一类话题的读者，建议把每日速递和内容时间线结合使用：速递负责“今天有什么”，
+          时间线负责“这件事怎么走到今天”。两者交替使用，比只看单条热门爆料更容易形成完整判断。
+          页面内提供的分类入口和标签索引，也是为这种交替阅读准备的。
+        </p>
+      </section>
+
+      <!-- 06 体验指南 -->
+      <section class="panel" id="guide">
+        <h2>体验指南</h2>
+        <p class="sub">页面结构、筛选入口、移动端阅读与追更方式说明。</p>
+        <h3>从哪里开始读</h3>
+        <p>
+          首次访问可以从首屏下方的“热门爆料推荐”开始，挑两三条感兴趣的话题，再回到“每日速递”了解近期更新节奏。
+          如果想按类型找内容，左栏的频道和标签索引可以直接跳转到对应栏目。
+        </p>
+        <h3>分类筛选与跳转</h3>
+        <p>
+          分类入口按内容方向划分，点击后会定位到对应栏目，不会跳转到外部页面。标签索引用于快速缩小范围，
+          适合已经知道自己想找哪类话题的读者。
+        </p>
+        <h3>移动端与碎片时间</h3>
+        <p>
+          页面在手机上会把左右侧栏移到主内容之后，频道导航压缩为页头内的横向滚动区域，正文保持完整可读。
+          通勤时建议优先浏览每日速递和一句话摘要，睡前可以读深度解析和类型对照。
+        </p>
+        <h3>追更与收藏</h3>
+        <p>
+          每日速递按日期排列，适合固定时间回看。若想持续跟进某一类话题，可以把对应的分类入口地址保留在浏览器收藏中，
+          下次直接打开即可定位到相同栏目。
+        </p>
+      </section>
+
+      <!-- 07 FAQ -->
+      <section class="panel" id="faq">
+        <h2>常见问答</h2>
+        <p class="sub">关于内容类型、更新节奏与阅读选择的常见问题。</p>
+        <div class="faq-list">
+          <details open>
+            <summary>海角吃瓜适合什么人看？</summary>
+            <p>适合想快速了解网络热点、讨论脉络和内容风向的读者，尤其是习惯用碎片时间浏览摘要、偶尔深入阅读观察类内容的人。</p>
+          </details>
+          <details>
+            <summary>这类内容一般多久更新一次？</summary>
+            <p>每日速递按日更新，热门爆料和讨论脉络的更新频次与话题本身的热度有关。页面内条目摘要会标注更新时间，方便判断跟进节奏。</p>
+          </details>
+          <details>
+            <summary>热门爆料和每日速递有什么区别？</summary>
+            <p>热门爆料侧重讨论集中度较高的条目，适合快速了解大家在聊什么；每日速递按日期滚动整理，适合持续跟进同一类话题的更新。</p>
+          </details>
+          <details>
+            <summary>想找某一类话题，从哪里开始比较快？</summary>
+            <p>可以先看左栏标签索引或分类入口，按话题现场、内容风向、类型对比等方向缩小范围，再进入对应栏目浏览摘要。</p>
+          </details>
+          <details>
+            <summary>通勤时怎么读更省时间？</summary>
+            <p>优先看每日速递中的一句话摘要，遇到感兴趣的条目再展开。首屏的热门爆料卡片也适合快速扫读标题和看点。</p>
+          </details>
+          <details>
+            <summary>现场感条目和观察类内容应该怎么选？</summary>
+            <p>如果只是想快速知道发生了什么，可以先看现场感条目；如果正在比较不同内容方向、需要判断依据，观察类的类型对照会更合适。</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- 08 用户评论 -->
+      <section class="panel" id="comments">
+        <h2>用户评论</h2>
+        <p class="sub">来自不同阅读场景的简短反馈，包含中性评价。</p>
+        <div class="comment-grid">
+          <div class="comment"><div class="comment-top"><span class="avatar">林</span><b>林间散步</b><span>今日</span></div><p>速递的一句话摘要挺省时间，通勤路上扫一遍就行。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar">陈</span><b>陈小满</b><span>今日</span></div><p>热门爆料里的话题现场整理得比较清楚，不用来回翻。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar">周</span><b>周周</b><span>今日</span></div><p>类型对比那部分对选择困难的人有帮助，至少知道两类内容的差别。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar">吴</span><b>吴茶茶</b><span>昨日</span></div><p>更新节奏说明比较实用，知道什么时候回来看新条目。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar">郑</span><b>郑一页</b><span>昨日</span></div><p>睡前看内容风向刚好，篇幅不长，读完不累。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar">许</span><b>许慢慢</b><span>昨日</span></div><p>部分条目摘要还可以再具体一点，有些只写到方向没有细节。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar">何</span><b>何小北</b><span>昨日</span></div><p>分类入口按类型分得比较细，找话题现场类内容方便。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar">高</span><b>高木木</b><span>2 天前</span></div><p>讨论脉络的时间线做得不错，能看出话题是怎么扩散的。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar">罗</span><b>罗小池</b><span>2 天前</span></div><p>手机上看侧栏会移到下面，正文阅读没受影响，这点可以。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar">梁</span><b>梁一一</b><span>2 天前</span></div><p>希望热门爆料再多一点现场类条目，观察类有点多。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar">宋</span><b>宋知秋</b><span>3 天前</span></div><p>FAQ 里更新节奏那个问题回答得直接，没有绕。</p></div>
+          <div class="comment"><div class="comment-top"><span class="avatar">唐</span><b>唐小糖</b><span>3 天前</span></div><p>深度解析篇幅稍长，但对照阅读的思路挺清楚。</p></div>
+        </div>
+      </section>
+
+      <!-- 09 相关资讯 -->
+      <section class="panel" id="news">
+        <h2>相关资讯</h2>
+        <p class="sub">与话题现场、内容风向和阅读方式相关的短资讯。</p>
+        <div class="news-list">
+          <div class="news-item">
+            <span class="news-date">2025-03-18</span>
+            <div><h4>话题现场类条目讨论集中度上升</h4><p>近期多条讨论指向同一类内容方向，摘要更新频率随之提高。</p></div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-17</span>
+            <div><h4>内容风向观察：偏归纳类内容阅读完成度更高</h4><p>与碎片化爆料相比，带对照整理的条目更容易被完整读完。</p></div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-16</span>
+            <div><h4>讨论脉络整理补充中间节点</h4><p>时间线新增讨论扩散过程中的关键环节，便于理解话题走向。</p></div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-15</span>
+            <div><h4>类型对比内容增加阅读场景说明</h4><p>现场感条目与观察类内容的适用场景被进一步拆分说明。</p></div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-14</span>
+            <div><h4>通勤速览条目调整摘要长度</h4><p>一句话摘要控制在更短篇幅内，方便在移动端快速浏览。</p></div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-03-13</span>
+            <div><h4>每日速递更新频次保持稳定</h4><p>条目数量维持在每日八到十二条，更新时间集中在上午。</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="panel" id="recommend">
+        <h2>相关推荐</h2>
+        <p class="sub">按具体内容方向整理的标签索引，方便继续查找。</p>
+        <div class="rec-tags">
+          <a href="#hot">话题现场时间线整理</a>
+          <a href="#deep">内容风向观察方法</a>
+          <a href="#latest">每日速递一句话摘要</a>
+          <a href="#category">讨论脉络关键节点</a>
+          <a href="#guide">通勤速览阅读顺序</a>
+          <a href="#faq">更新节奏与追更建议</a>
+          <a href="#hot">吃瓜前线热门条目</a>
+          <a href="#deep">现场感与观察类对比</a>
+        </div>
+      </section>
+
+      <!-- 11 内容时间线 -->
+      <section class="panel" id="timeline">
+        <h2>内容时间线</h2>
+        <p class="sub">近期更新节奏与话题扩散节点示意。</p>
+        <div class="timeline">
+          <div class="tl-item">
+            <span class="tl-time">03-18</span>
+            <div><b>话题现场速递更新</b><p>补充讨论集中度上升的条目摘要，调整热门卡片顺序。</p></div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-time">03-17</span>
+            <div><b>内容风向观察条目新增</b><p>加入类型偏好与阅读完成度的对照说明。</p></div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-time">03-16</span>
+            <div><b>讨论脉络时间线补充</b><p>增加讨论扩散过程中的中间节点，便于连续阅读。</p></div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-time">03-15</span>
+            <div><b>类型对比栏目调整</b><p>把现场感条目与观察类内容拆开说明适用场景。</p></div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-time">03-14</span>
+            <div><b>通勤速览摘要优化</b><p>缩短单条摘要长度，移动端浏览更顺。</p></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右栏：辅助阅读 -->
+    <aside class="sidebar-right" aria-label="辅助阅读">
+      <div class="side-block toc">
+        <h4>页内目录</h4>
+        <ul>
+          <li><a href="#intro">内容简介</a></li>
+          <li><a href="#hot">热门爆料推荐</a></li>
+          <li><a href="#latest">每日速递</a></li>
+          <li><a href="#category">分类入口</a></li>
+          <li><a href="#deep">深度解析</a></li>
+          <li><a href="#guide">体验指南</a></li>
+          <li><a href="#faq">常见问答</a></li>
+          <li><a href="#comments">用户评论</a></li>
+          <li><a href="#news">相关资讯</a></li>
+          <li><a href="#recommend">相关推荐</a></li>
+          <li><a href="#timeline">内容时间线</a></li>
+        </ul>
+      </div>
+      <div class="side-block">
+        <h4>热门条目</h4>
+        <ul class="hot-list">
+          <li><span class="rank">1</span><a href="#hot">讨论热度攀升的现场话题</a></li>
+          <li><span class="rank">2</span><a href="#hot">内容风向与类型偏好观察</a></li>
+          <li><span class="rank">3</span><a href="#latest">通勤速览今日条目</a></li>
+          <li><span class="rank">4</span><a href="#deep">现场感与观察类对照</a></li>
+          <li><span class="rank">5</span><a href="#timeline">讨论脉络中间节点</a></li>
+        </ul>
+      </div>
+      <div class="side-block">
+        <h4>延伸阅读</h4>
+        <a class="ext-link" href="#deep">类型对比与阅读选择 <span>深度</span></a>
+        <a class="ext-link" href="#faq">更新节奏常见问题 <span>问答</span></a>
+        <a class="ext-link" href="#guide">移动端阅读与追更 <span>指南</span></a>
+        <a class="ext-link" href="#news">近期资讯摘要 <span>资讯</span></a>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- 页尾 -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <b>海角吃瓜</b>
+          <p>围绕热门爆料、每日速递与内容风向的资讯门户，整理话题现场、讨论脉络与类型对比，适合碎片时间浏览与持续跟进。</p>
+        </div>
+        <div class="footer-col">
+          <h4>内容频道</h4>
+          <a href="#hot">热门爆料</a>
+          <a href="#latest">每日速递</a>
+          <a href="#category">分类入口</a>
+          <a href="#deep">深度解析</a>
+        </div>
+        <div class="footer-col">
+          <h4>阅读辅助</h4>
+          <a href="#guide">体验指南</a>
+          <a href="#faq">常见问答</a>
+          <a href="#comments">用户评论</a>
+          <a href="#recommend">相关推荐</a>
+        </div>
+        <div class="footer-col">
+          <h4>近期更新</h4>
+          <a href="#timeline">内容时间线</a>
+          <a href="#news">相关资讯</a>
+          <a href="#latest">每日速递摘要</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 海角吃瓜 · 内容示例页面</span>
+        <span>部分内容为示例数据，仅用于展示页面结构。</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var searchInput = document.getElementById("searchInput");
+      var searchBtn = document.getElementById("searchBtn");
+      var hotCards = document.getElementById("hotCards");
+      var cards = hotCards ? Array.prototype.slice.call(hotCards.children) : [];
+
+      // 创建无结果提示
+      var emptyTip = document.createElement("div");
+      emptyTip.className = "empty-msg";
+      emptyTip.textContent = "没有找到匹配的条目，换一个关键词试试。";
+      if (hotCards && hotCards.parentNode) {
+        hotCards.parentNode.insertBefore(emptyTip, hotCards.nextSibling);
+      }
+
+      function filterCards() {
+        var q = (searchInput.value || "").trim().toLowerCase();
+        var visible = 0;
+
+        cards.forEach(function (card) {
+          var text = card.textContent.toLowerCase();
+          var matched = !q || text.indexOf(q) !== -1;
+          card.style.display = matched ? "" : "none";
+          if (matched) visible++;
+        });
+
+        if (q) {
+          emptyTip.style.display = visible === 0 ? "block" : "none";
+          hotCards.style.display = visible === 0 ? "none" : "";
+        } else {
+          emptyTip.style.display = "none";
+          hotCards.style.display = "";
+        }
+      }
+
+      if (searchBtn && searchInput) {
+        searchBtn.addEventListener("click", filterCards);
+        searchInput.addEventListener("input", filterCards);
+        searchInput.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {
+            e.preventDefault();
+            filterCards();
+          }
+        });
+      }
+
+      // 确保锚点目标存在且 id 唯一
+      var ids = {};
+      document.querySelectorAll("[id]").forEach(function (el) {
+        if (ids[el.id]) {
+          // 保留第一个，重命名后续重复 id
+          el.id = el.id + "-" + Date.now();
+        } else {
+          ids[el.id] = true;
+        }
+      });
+    })();
+  </script>
+</body>
+          </html>
